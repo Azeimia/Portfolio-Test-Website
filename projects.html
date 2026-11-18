@@ -80,12 +80,19 @@ section{padding:56px 0;}
 .award-name{font-weight:500;}
 .award-detail{font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--ink-faint); text-align:right;}
 
+.item-card{cursor:pointer; transition:transform .15s ease, box-shadow .15s ease; text-decoration:none; display:block; color:inherit;}
+.item-card:hover{transform:translateY(-2px); box-shadow:0 14px 40px rgba(32,36,31,.14);}
+.item-teaser{color:var(--ink-soft); margin-bottom:0;}
+.back-link{display:inline-flex; align-items:center; gap:6px; text-decoration:none; font-size:.9rem; font-weight:600; color:var(--nickel-deep); padding:8px 0; margin-bottom:8px;}
+.back-link:hover{text-decoration:underline;}
+
 footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--ink-faint);}
 
 :focus-visible{outline:2px solid var(--nickel-deep); outline-offset:3px; border-radius:8px;}
 
 @media (prefers-reduced-motion:reduce){*{transition:none !important; animation:none !important;}}
-</style></head><body>
+</style>
+</head><body>
 <div class="atmosphere"><div class="b1"></div><div class="b2"></div></div>
 <nav class="nav" aria-label="Primary">
   <div class="nav-inner">
@@ -106,96 +113,53 @@ footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--
     <h1>Projects</h1>
   </section>
 
-  <section style="padding-top:0; display:flex; flex-direction:column; gap:20px;">
-    <div class="glass card">
+  <section style="padding-top:0; display:flex; flex-direction:column; gap:16px;">
+    <a href="oyaprep.html" class="glass card item-card">
       <p class="eyebrow">01 — Materials science</p>
       <h3>OYAPREP: Nickel-Doped Chitosan Biopolymer Film</h3>
-      <p class="role-sub" style="margin-bottom:12px;">Research Intern, Emmerich Research Center (Jakarta) · December 2025–Present</p>
-      <p>Investigating glycerin, STPP, and NaOH as plasticizers and ionic crosslinkers for possible synergy with a nickel-doped chitosan matrix, independently directed within the firm's broader R&amp;D focus. Ran 30+ trials across 20 sample batches testing formulation effects on film brittleness and mechanical strength, and resolved a recurring equipment failure by designing and 3D-printing five-plus iterations of a custom film clamp holder — eliminating slipping and premature snapping during tensile testing. Working in Fusion 360, Igor Pro (WaveMetrics), and SQL.</p>
+      <p class="item-teaser">Testing glycerin, STPP, and NaOH as plasticizers and crosslinkers in a nickel-doped chitosan matrix — 30+ trials, 20 sample batches.</p>
       <div class="tag-row">
         <span class="tag">Formulation Engineering</span>
-        <span class="tag">Process Engineering</span>
         <span class="tag">Chitosan</span>
-        <span class="tag">Biodegradable Materials</span>
       </div>
-    </div>
+    </a>
 
-    <div class="glass card">
+    <a href="thesis.html" class="glass card item-card">
       <p class="eyebrow">02 — Senior thesis &amp; defense</p>
       <h3>Biogenic Building Materials and Urban Heat Island Mitigation</h3>
-      <p class="role-sub" style="margin-bottom:12px;">Mawar Sharon Christian School Research Project · August 2025–June 2026</p>
-      <p>"Evaluating Biogenic Building Materials' Role in Singapore's Urban Heat Island Effect Reduction and Comparison to Surabaya's City Infrastructure" — authored and defended, with structured primary-research interviews with Alvin Chia (Urban Development, Sentosa Island, Singapore) and Prof. Dr. Ir. Surjamanto Wonorahardjo (Head, Building Technology Research Group, Institut Teknologi Bandung). Both experts, independently, recommended prioritizing biogenic materials in secondary structures (roofs, walls) over primary ones, citing Indonesia's differing structural lifespan regulations (100-year primary vs. 20–30-year secondary replacement cycles) as a lower-risk entry point for real-world adoption. Presented internally at the MSCS thesis defense and externally at a TEDx Q&amp;A session at Pakuwon Mall, Surabaya.</p>
+      <p class="item-teaser">Comparing Singapore and Surabaya, with primary-research interviews and a TEDx presentation.</p>
       <div class="tag-row">
         <span class="tag">Urban Climate</span>
         <span class="tag">Comparative Research</span>
-        <span class="tag">Primary-Source Interviews</span>
       </div>
-    </div>
+    </a>
   </section>
 
   <section style="padding-top:0;">
     <p class="eyebrow">Leadership &amp; volunteer</p>
-    <div class="glass card">
+  </section>
 
-      <div class="role-block">
-        <div class="role-head">
-          <h3>Co-Founder, Seeds of Promise Surabaya</h3>
-          <span class="role-dates">Aug 2025–Present</span>
-        </div>
-        <p class="role-sub">Surabaya-based STEM/language/arts education initiative for underprivileged students</p>
-        <ul>
-          <li>Recruited and led an inner team of 5 Directors and 1 Secretary across Curriculum, Digital Media, Partnership &amp; Fundraising, and Volunteer Coordination.</li>
-          <li>Directed curriculum design, translating national Merdeka Kurikulum (IPAS) textbooks into program material across 3 grade levels (3rd–6th).</li>
-          <li>Delivered biweekly educational visits to 2 orphanages, reaching 20+ students; led a volunteer regeneration cycle screening 20+ applicants and implementing 3 structural revisions from synthesized feedback.</li>
-        </ul>
-      </div>
-
-      <div class="role-block">
-        <div class="role-head">
-          <h3>Secretary &amp; VP Runner-Up, MSCS Student Council</h3>
-          <span class="role-dates">Dec 2024–Dec 2025</span>
-        </div>
-        <ul>
-          <li>Rated "Pemimpin Unggul" (Outstanding Leader); managed inter-division communication and served as Person-in-Charge for orientation week, coordinating logistics for an incoming class of up to 100 students.</li>
-        </ul>
-      </div>
-
-      <div class="role-block">
-        <div class="role-head">
-          <h3>Coach, International Service East Teens Community</h3>
-          <span class="role-dates">Feb 2026–Present</span>
-        </div>
-        <p class="role-sub">GMS Church / Rose of Sharon Church — Coach (Feb 2026–present); Cell Group Leader (Jul 2024–Feb 2026); Sponsor (Dec 2023–Jul 2024)</p>
-        <ul>
-          <li>Oversee and equip 5 Connect Groups in faith, leadership, and ministry through discipleship.</li>
-          <li>Identified a cross-group decline in volunteer leader engagement about 5 months into the role and designed a sponsor-training pipeline to proactively develop future leaders, including facilitating CG Training 1.</li>
-        </ul>
-      </div>
-
-      <div class="role-block">
-        <div class="role-head">
-          <h3>Content Writer, TheLunerae</h3>
-          <span class="role-dates">Apr 2026–Present</span>
-        </div>
-        <p class="role-sub">UK-based online astronomy organization</p>
-        <ul>
-          <li>Researched and wrote 5 educational astronomy posts for a public audience; one of 2 (of 9) org-wide content writers awarded a Certificate of Appreciation, based on 16.5 hours contributed.</li>
-        </ul>
-      </div>
-
-      <div class="role-block">
-        <div class="role-head">
-          <h3>Chemistry &amp; Biology Team, MSCS</h3>
-          <span class="role-dates">Jan 2024–Present</span>
-        </div>
-        <p class="role-sub">Grade 12 (Chemistry Team); Grade 10–11 (Biology Team)</p>
-        <ul>
-          <li>Prepared for Olimpiade Sains Nasional (OSN) in Biology.</li>
-          <li>Student supervisor for the team's ongoing research project, "Antioxidant and Antidiabetic Potential of Caesalpinia pulcherrima Leaf Extract."</li>
-        </ul>
-      </div>
-
-    </div>
+  <section style="padding-top:0; display:flex; flex-direction:column; gap:16px;">
+    <a href="seeds-of-promise.html" class="glass card item-card">
+      <h3>Co-Founder, Seeds of Promise Surabaya</h3>
+      <p class="item-teaser">STEM/language/arts education initiative for underprivileged students · Aug 2025–Present</p>
+    </a>
+    <a href="student-council.html" class="glass card item-card">
+      <h3>Secretary &amp; VP Runner-Up, MSCS Student Council</h3>
+      <p class="item-teaser">Rated "Pemimpin Unggul" (Outstanding Leader) · Dec 2024–Dec 2025</p>
+    </a>
+    <a href="ise-teens.html" class="glass card item-card">
+      <h3>Coach, International Service East Teens Community</h3>
+      <p class="item-teaser">Oversee 5 Connect Groups; built a sponsor-training leadership pipeline · Feb 2026–Present</p>
+    </a>
+    <a href="thelunerae.html" class="glass card item-card">
+      <h3>Content Writer, TheLunerae</h3>
+      <p class="item-teaser">UK-based online astronomy organization · Apr 2026–Present</p>
+    </a>
+    <a href="chem-bio-team.html" class="glass card item-card">
+      <h3>Chemistry &amp; Biology Team, MSCS</h3>
+      <p class="item-teaser">OSN Biology prep and student-supervised research · Jan 2024–Present</p>
+    </a>
   </section>
 
   <section style="padding-top:0;">
