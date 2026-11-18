@@ -51,8 +51,6 @@ a{color:inherit;}
 .card{padding:32px;}
 
 section{padding:56px 0;}
-.hero h1{font-size:clamp(2.1rem,5vw,3.2rem); max-width:18ch;}
-.hero .lede{max-width:56ch; font-size:1.08rem; color:var(--ink-soft);}
 
 .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;}
 .btn{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:600; font-size:.94rem; padding:13px 24px; border-radius:var(--radius-pill); border:1px solid transparent; cursor:pointer; transition:transform .15s ease, box-shadow .15s ease; font-family:'Inter',sans-serif;}
@@ -61,27 +59,26 @@ section{padding:56px 0;}
 .btn-secondary{background:var(--glass-strong); border-color:var(--glass-border); color:var(--nickel-deep);}
 .btn-secondary:hover{background:rgba(255,255,255,.95);}
 
-.stat-row{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
-.stat{padding:24px;}
-.stat .num{font-family:'Fraunces',serif; font-size:2.4rem; font-weight:600; color:var(--nickel-deep);}
-.stat .label{font-size:.85rem; color:var(--ink-soft);}
-@media (max-width:640px){.stat-row{grid-template-columns:1fr;}}
-
 .tag-row{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;}
 .tag{font-family:'IBM Plex Mono',monospace; font-size:.72rem; background:rgba(110,138,120,.14); color:var(--nickel-deep); padding:5px 11px; border-radius:var(--radius-pill);}
 
-.timeline{position:relative; padding-left:56px;}
-.timeline::before{content:""; position:absolute; left:19px; top:8px; bottom:8px; width:2px; background:rgba(110,138,120,.3);}
-.t-item{position:relative; padding-bottom:32px;}
-.t-item:last-child{padding-bottom:0;}
-.t-item::before{content:attr(data-n); position:absolute; left:-56px; top:0; width:40px; height:40px; border-radius:50%; background:var(--nickel-deep); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600;}
+.role-block{padding:18px 0; border-bottom:1px solid rgba(32,36,31,.1);}
+.role-block:last-child{border-bottom:none; padding-bottom:0;}
+.role-block:first-child{padding-top:0;}
+.role-head{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:baseline; margin-bottom:4px;}
+.role-head h3{font-size:1.1rem; margin:0;}
+.role-dates{font-family:'IBM Plex Mono',monospace; font-size:.75rem; color:var(--ink-faint); white-space:nowrap;}
+.role-sub{font-size:.85rem; color:var(--ink-soft); margin:0 0 .5em;}
+.role-block ul{margin:0; padding-left:20px;}
+.role-block li{margin-bottom:6px;}
 
-.placeholder-note{border:1px dashed var(--glycerin); background:rgba(214,162,75,.08); color:var(--ink-soft); font-size:.85rem; padding:12px 16px; border-radius:var(--radius-md); margin-top:16px;}
-
-form label{display:block; font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--nickel-deep); margin-bottom:6px;}
-form input, form textarea{width:100%; font-family:'Inter',sans-serif; font-size:.95rem; padding:12px 14px; border-radius:var(--radius-md); border:1px solid var(--glass-border); background:rgba(255,255,255,.6); margin-bottom:16px; color:var(--ink);}
-form input:focus, form textarea:focus{outline:2px solid var(--nickel-deep); outline-offset:1px;}
-#form-status{font-size:.85rem; color:var(--nickel-deep); min-height:1.2em;}
+.award-group h3{font-size:1rem; margin-bottom:10px;}
+.award-list{list-style:none; margin:0 0 24px; padding:0;}
+.award-list:last-child{margin-bottom:0;}
+.award-list li{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:10px 0; border-bottom:1px solid rgba(32,36,31,.08);}
+.award-list li:last-child{border-bottom:none;}
+.award-name{font-weight:500;}
+.award-detail{font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--ink-faint); text-align:right;}
 
 footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--ink-faint);}
 
@@ -103,6 +100,7 @@ footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--
   </div>
 </nav>
 <div class="wrap">
+
   <section>
     <p class="eyebrow">Research</p>
     <h1>Projects</h1>
@@ -112,28 +110,125 @@ footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--
     <div class="glass card">
       <p class="eyebrow">01 — Materials science</p>
       <h3>OYAPREP: Nickel-Doped Chitosan Biopolymer Film</h3>
-      <p>At Emmerich Research Centre, under Mr. Eden, I conduct tensile strength testing across varying additive concentrations to evaluate synergistic effects on film durability and biodegradability, and I'm designing a custom 3D-modeled mechanical clamp (Fusion 360, Onshape) to eliminate a confounding variable in the existing testing protocol.</p>
+      <p class="role-sub" style="margin-bottom:12px;">Research Intern, Emmerich Research Center (Jakarta) · December 2025–Present</p>
+      <p>Investigating glycerin, STPP, and NaOH as plasticizers and ionic crosslinkers for possible synergy with a nickel-doped chitosan matrix, independently directed within the firm's broader R&amp;D focus. Ran 30+ trials across 20 sample batches testing formulation effects on film brittleness and mechanical strength, and resolved a recurring equipment failure by designing and 3D-printing five-plus iterations of a custom film clamp holder — eliminating slipping and premature snapping during tensile testing. Working in Fusion 360, Igor Pro (WaveMetrics), and SQL.</p>
       <div class="tag-row">
         <span class="tag">Formulation Engineering</span>
         <span class="tag">Process Engineering</span>
         <span class="tag">Chitosan</span>
         <span class="tag">Biodegradable Materials</span>
       </div>
-      <div class="placeholder-note">Add your methodology, current results, or figures here once available.</div>
     </div>
 
     <div class="glass card">
-      <p class="eyebrow">02 — Independent research</p>
-      <h3>Biogenic Materials &amp; Urban Heat Island Mitigation</h3>
-      <p>Through Cambridge Global Perspectives (9239), I'm researching the feasibility of biogenic materials in grey infrastructure for urban heat island mitigation, comparing Singapore and Surabaya.</p>
+      <p class="eyebrow">02 — Senior thesis &amp; defense</p>
+      <h3>Biogenic Building Materials and Urban Heat Island Mitigation</h3>
+      <p class="role-sub" style="margin-bottom:12px;">Mawar Sharon Christian School Research Project · August 2025–June 2026</p>
+      <p>"Evaluating Biogenic Building Materials' Role in Singapore's Urban Heat Island Effect Reduction and Comparison to Surabaya's City Infrastructure" — authored and defended, with structured primary-research interviews with Alvin Chia (Urban Development, Sentosa Island, Singapore) and Prof. Dr. Ir. Surjamanto Wonorahardjo (Head, Building Technology Research Group, Institut Teknologi Bandung). Both experts, independently, recommended prioritizing biogenic materials in secondary structures (roofs, walls) over primary ones, citing Indonesia's differing structural lifespan regulations (100-year primary vs. 20–30-year secondary replacement cycles) as a lower-risk entry point for real-world adoption. Presented internally at the MSCS thesis defense and externally at a TEDx Q&amp;A session at Pakuwon Mall, Surabaya.</p>
       <div class="tag-row">
         <span class="tag">Urban Climate</span>
         <span class="tag">Comparative Research</span>
-        <span class="tag">Global Perspectives</span>
+        <span class="tag">Primary-Source Interviews</span>
       </div>
-      <div class="placeholder-note">Add your comparison findings, sources, or a summary of your argument here.</div>
     </div>
   </section>
+
+  <section style="padding-top:0;">
+    <p class="eyebrow">Leadership &amp; volunteer</p>
+    <div class="glass card">
+
+      <div class="role-block">
+        <div class="role-head">
+          <h3>Co-Founder, Seeds of Promise Surabaya</h3>
+          <span class="role-dates">Aug 2025–Present</span>
+        </div>
+        <p class="role-sub">Surabaya-based STEM/language/arts education initiative for underprivileged students</p>
+        <ul>
+          <li>Recruited and led an inner team of 5 Directors and 1 Secretary across Curriculum, Digital Media, Partnership &amp; Fundraising, and Volunteer Coordination.</li>
+          <li>Directed curriculum design, translating national Merdeka Kurikulum (IPAS) textbooks into program material across 3 grade levels (3rd–6th).</li>
+          <li>Delivered biweekly educational visits to 2 orphanages, reaching 20+ students; led a volunteer regeneration cycle screening 20+ applicants and implementing 3 structural revisions from synthesized feedback.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-head">
+          <h3>Secretary &amp; VP Runner-Up, MSCS Student Council</h3>
+          <span class="role-dates">Dec 2024–Dec 2025</span>
+        </div>
+        <ul>
+          <li>Rated "Pemimpin Unggul" (Outstanding Leader); managed inter-division communication and served as Person-in-Charge for orientation week, coordinating logistics for an incoming class of up to 100 students.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-head">
+          <h3>Coach, International Service East Teens Community</h3>
+          <span class="role-dates">Feb 2026–Present</span>
+        </div>
+        <p class="role-sub">GMS Church / Rose of Sharon Church — Coach (Feb 2026–present); Cell Group Leader (Jul 2024–Feb 2026); Sponsor (Dec 2023–Jul 2024)</p>
+        <ul>
+          <li>Oversee and equip 5 Connect Groups in faith, leadership, and ministry through discipleship.</li>
+          <li>Identified a cross-group decline in volunteer leader engagement about 5 months into the role and designed a sponsor-training pipeline to proactively develop future leaders, including facilitating CG Training 1.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-head">
+          <h3>Content Writer, TheLunerae</h3>
+          <span class="role-dates">Apr 2026–Present</span>
+        </div>
+        <p class="role-sub">UK-based online astronomy organization</p>
+        <ul>
+          <li>Researched and wrote 5 educational astronomy posts for a public audience; one of 2 (of 9) org-wide content writers awarded a Certificate of Appreciation, based on 16.5 hours contributed.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-head">
+          <h3>Chemistry &amp; Biology Team, MSCS</h3>
+          <span class="role-dates">Jan 2024–Present</span>
+        </div>
+        <p class="role-sub">Grade 12 (Chemistry Team); Grade 10–11 (Biology Team)</p>
+        <ul>
+          <li>Prepared for Olimpiade Sains Nasional (OSN) in Biology.</li>
+          <li>Student supervisor for the team's ongoing research project, "Antioxidant and Antidiabetic Potential of Caesalpinia pulcherrima Leaf Extract."</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <p class="eyebrow">Awards</p>
+    <div class="glass card">
+
+      <div class="award-group">
+        <h3>General awards</h3>
+        <ul class="award-list">
+          <li><span class="award-name">AYIMUN 16th, Kuala Lumpur (2025)</span><span class="award-detail">Best Position Paper — 90.00/100</span></li>
+          <li><span class="award-name">Immerse Education Global Futures Challenge, Engineering (2025)</span><span class="award-detail">Runner-up, £1,000 partial scholarship</span></li>
+          <li><span class="award-name">IDEATHLON 2025</span><span class="award-detail">Best in Content (Public Speaking); Best in Presentation, Debate</span></li>
+          <li><span class="award-name">Olimpiad Siswa Nasional (LKI × HMD Fisika UI), Biology</span><span class="award-detail">Bronze Medal, 506/A</span></li>
+          <li><span class="award-name">STEM Olympiad</span><span class="award-detail">Bronze Medal, Semi-Finalist — Rank 154/373</span></li>
+          <li><span class="award-name">Petra Civil Expo 2025</span><span class="award-detail">Top 4 Finalist</span></li>
+          <li><span class="award-name">SARC 2025; EDUALL/SIRSAK SDG 11 Paper Writing Competition</span><span class="award-detail">Participant</span></li>
+          <li><span class="award-name">SUMUN 2024 (Surabaya MUN)</span><span class="award-detail">Delegate, Participation Award</span></li>
+          <li><span class="award-name">IDEATHLON 2024, Art Competition</span><span class="award-detail">Participation Award</span></li>
+        </ul>
+      </div>
+
+      <div class="award-group">
+        <h3>Character awards</h3>
+        <ul class="award-list">
+          <li><span class="award-name">Leadership Award (Certificate of Commendation), MSCS Senior High</span><span class="award-detail">Jun 2025, Grade 10</span></li>
+          <li><span class="award-name">Christ-Character Growth Award, MSCS</span><span class="award-detail">Dec 2025, Grade 11</span></li>
+          <li><span class="award-name">Christ-Character Growth Award, MSCS</span><span class="award-detail">Jun 2026, Grade 11 (awarded twice)</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
 </div>
 <footer>© 2026 Josh Reinhard Wijaya · Surabaya, Indonesia</footer>
 <script>
@@ -143,12 +238,5 @@ navToggle.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   navToggle.setAttribute('aria-expanded', open);
 });
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    document.getElementById('form-status').textContent = "This form isn't connected to a backend yet — nothing was sent.";
-  });
-}
 </script>
 </body></html>

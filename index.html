@@ -70,19 +70,6 @@ section{padding:56px 0;}
 .tag-row{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;}
 .tag{font-family:'IBM Plex Mono',monospace; font-size:.72rem; background:rgba(110,138,120,.14); color:var(--nickel-deep); padding:5px 11px; border-radius:var(--radius-pill);}
 
-.timeline{position:relative; padding-left:56px;}
-.timeline::before{content:""; position:absolute; left:19px; top:8px; bottom:8px; width:2px; background:rgba(110,138,120,.3);}
-.t-item{position:relative; padding-bottom:32px;}
-.t-item:last-child{padding-bottom:0;}
-.t-item::before{content:attr(data-n); position:absolute; left:-56px; top:0; width:40px; height:40px; border-radius:50%; background:var(--nickel-deep); color:#fff; display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:600;}
-
-.placeholder-note{border:1px dashed var(--glycerin); background:rgba(214,162,75,.08); color:var(--ink-soft); font-size:.85rem; padding:12px 16px; border-radius:var(--radius-md); margin-top:16px;}
-
-form label{display:block; font-family:'IBM Plex Mono',monospace; font-size:.78rem; color:var(--nickel-deep); margin-bottom:6px;}
-form input, form textarea{width:100%; font-family:'Inter',sans-serif; font-size:.95rem; padding:12px 14px; border-radius:var(--radius-md); border:1px solid var(--glass-border); background:rgba(255,255,255,.6); margin-bottom:16px; color:var(--ink);}
-form input:focus, form textarea:focus{outline:2px solid var(--nickel-deep); outline-offset:1px;}
-#form-status{font-size:.85rem; color:var(--nickel-deep); min-height:1.2em;}
-
 footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--ink-faint);}
 
 :focus-visible{outline:2px solid var(--nickel-deep); outline-offset:3px; border-radius:8px;}
@@ -116,8 +103,8 @@ footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--
   <section>
     <p class="eyebrow">Featured project</p>
     <div class="glass card">
-      <h3>OYAPREP — Chitosan Biopolymer Film</h3>
-      <p>Testing how nickel and glycerin additives change the tensile strength and brittleness of chitosan biopolymer film at Emmerich Research Centre.</p>
+      <h3>OYAPREP — Nickel-Doped Chitosan Biopolymer Film</h3>
+      <p>At Emmerich Research Center, I investigate glycerin, STPP, and NaOH as plasticizers and ionic crosslinkers, testing for synergy with a nickel-doped chitosan matrix — 30+ trials across 20 sample batches so far.</p>
       <div class="tag-row">
         <span class="tag">Biopolymers</span>
         <span class="tag">Materials Science</span>
@@ -131,9 +118,9 @@ footer{padding:40px 24px 60px; text-align:center; font-size:.85rem; color:var(--
 
   <section>
     <div class="stat-row">
-      <div class="glass stat"><div class="num">13</div><div class="label">AS-level chapters self-taught in ~5 months</div></div>
-      <div class="glass stat"><div class="num">2</div><div class="label">Active research tracks</div></div>
-      <div class="glass stat"><div class="num">3</div><div class="label">Cambridge AS-level exams in progress</div></div>
+      <div class="glass stat"><div class="num">93</div><div class="label">Unweighted GPA, out of 100</div></div>
+      <div class="glass stat"><div class="num">1410</div><div class="label">SAT (680 Math, 730 Reading &amp; Writing)</div></div>
+      <div class="glass stat"><div class="num">30+</div><div class="label">Research trials run at Emmerich, across 20 sample batches</div></div>
     </div>
   </section>
 </div>
@@ -145,12 +132,5 @@ navToggle.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   navToggle.setAttribute('aria-expanded', open);
 });
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    document.getElementById('form-status').textContent = "This form isn't connected to a backend yet — nothing was sent.";
-  });
-}
 </script>
 </body></html>
